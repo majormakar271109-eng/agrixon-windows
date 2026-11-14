@@ -1,15 +1,21 @@
-# Crops (low poly) — split binary buffer
+# Crops (low poly) — glTF asset
 
-`scene.bin` from the original glTF asset, split into 4 MB ZIP volumes so it can
-be stored and downloaded in parts.
+Low-poly crop models used as a 3D reference asset. The binary buffer
+(`scene.bin`) is split into 4 MB ZIP volumes so it can be stored and downloaded
+in parts.
 
 ## Files
 
 | File | Size | Purpose |
 | --- | ---: | --- |
-| `scene.zip.001` | 4.0 MB | first ZIP volume |
-| `scene.zip.002` | 835 KB | second ZIP volume |
-| `SHA256SUMS.txt` | — | checksums for both volumes |
+| `scene.gltf` | 42 KB | glTF scene description |
+| `scene.zip.001` | 4.0 MB | first ZIP volume with `scene.bin` |
+| `scene.zip.002` | 835 KB | second ZIP volume with `scene.bin` |
+| `textures/Carrot_baseColor.png` | 97 KB | carrot base color |
+| `textures/Potatoe_baseColor.png` | 135 KB | potato base color |
+| `textures/Tomatoe_baseColor.png` | 148 KB | tomato base color |
+| `textures/Wheat_baseColor.png` | 34 KB | wheat base color |
+| `SHA256SUMS.txt` | — | checksums for both ZIP volumes |
 | `LICENSE.txt` | — | original model license and attribution |
 
 ## Reconstruct
@@ -27,8 +33,9 @@ cat scene.zip.001 scene.zip.002 > scene.zip
 unzip scene.zip
 ```
 
-The result is `scene.bin` (18,906,008 bytes). It is the binary buffer referenced
-by `scene.gltf`; the glTF file and `textures/` are not included in this folder.
+The result is `scene.bin` (18,906,008 bytes). Keep it next to `scene.gltf`;
+the `textures/` folder is already in the expected relative location. The asset
+can then be opened in any glTF viewer.
 
 ## Attribution
 
