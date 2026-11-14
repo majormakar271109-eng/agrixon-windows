@@ -1,0 +1,815 @@
+/* AGRIXON Field tools — layout on top of app.css */
+
+.tools-tabs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 28px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.tools-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tools-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 34px;
+  padding: 0 12px;
+  flex: none;
+  border-radius: 9px;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--muted);
+  white-space: nowrap;
+  transition: background 0.16s, color 0.16s;
+}
+
+.tools-tab:hover {
+  background: var(--soft);
+  color: var(--ink);
+}
+
+.tools-tab.is-active {
+  background: rgba(47, 107, 58, 0.09);
+  color: var(--green);
+  font-weight: 600;
+}
+
+.tools-tab .icon {
+  width: 15px;
+  height: 15px;
+}
+
+
+.tools-nav-item .icon {
+  width: 17px;
+  height: 17px;
+}
+
+.tools-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 10px;
+  color: var(--muted);
+  margin-right: 8px;
+}
+
+.tools-status .status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #6f9b63;
+  box-shadow: 0 0 0 3px rgba(111, 155, 99, 0.14);
+}
+
+.tools-view {
+  padding: 28px 32px 48px;
+  max-width: 1800px;
+  margin: auto;
+}
+
+.tools-overview {
+  margin-bottom: 24px;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.tools-table-card {
+  margin-top: 16px;
+}
+
+.tools-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.tools-card-head h2 {
+  margin-bottom: 4px;
+}
+
+.tools-search {
+  min-width: 220px;
+}
+
+.tools-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.tools-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.tools-form input,
+.tools-form select {
+  width: 100%;
+}
+
+.tools-form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.tools-form-inline {
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.tools-form-inline label {
+  flex: 1;
+}
+
+.tools-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.tools-list-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg);
+  font-size: 12px;
+}
+
+.tools-list-row strong {
+  font-weight: 550;
+}
+
+.tools-list-row small {
+  color: var(--muted);
+  display: block;
+  margin-top: 2px;
+}
+
+.tools-muted {
+  color: var(--muted);
+  font-size: 12px;
+  padding: 8px 0;
+}
+
+.tools-empty {
+  color: var(--muted);
+  font-size: 12px;
+  padding: 18px 0;
+}
+
+.tools-source {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.7;
+  margin-top: 18px;
+  max-width: 900px;
+}
+
+.tools-weather-current {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.tools-weather-now {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.tools-weather-now small {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+  margin-bottom: 8px;
+}
+
+.tools-weather-now strong {
+  font-size: 24px;
+  font-weight: 550;
+  letter-spacing: -0.8px;
+}
+
+.tools-weather-now em {
+  font-size: 11px;
+  color: var(--muted);
+  margin-left: 3px;
+}
+
+.tools-weather-days {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.tools-day {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px;
+  min-height: 150px;
+}
+
+.tools-day small {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.tools-day strong {
+  display: block;
+  font-size: 18px;
+  font-weight: 550;
+  letter-spacing: -0.5px;
+}
+
+.tools-day span {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  margin-top: 6px;
+}
+
+.tools-day .tools-day-rain {
+  color: var(--green);
+  font-weight: 550;
+}
+
+.tools-gdd {
+  margin-top: 16px;
+}
+
+.tools-gdd-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.tools-gdd-grid div {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px;
+  background: var(--bg);
+}
+
+.tools-gdd-grid small {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+  margin-bottom: 6px;
+}
+
+.tools-gdd-grid strong {
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.tools-ndvi-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.tools-ndvi-grid figure {
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tools-ndvi-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #dfe4d8;
+  min-height: 260px;
+  object-fit: cover;
+}
+
+.tools-ndvi-grid figcaption {
+  padding: 12px 14px;
+  font-size: 11px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+}
+
+.tools-integration-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 190px;
+}
+
+.tools-integration-card h2 {
+  font-size: 17px;
+}
+
+.tools-integration-card p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.tools-integration-card .tools-badge {
+  align-self: flex-start;
+  font-size: 9px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: var(--soft);
+  color: var(--green);
+  font-weight: 650;
+}
+
+.tools-integration-card .tools-badge.warn {
+  background: #f4e9dc;
+  color: var(--orange);
+}
+
+.tools-integration-card .tools-badge.off {
+  background: #f1e4e1;
+  color: var(--red);
+}
+
+.tools-integration-card a {
+  margin-top: auto;
+  font-size: 11px;
+  color: var(--green);
+  font-weight: 550;
+}
+
+.tools-table-card table td:first-child {
+  min-width: 160px;
+}
+
+.tools-table-card table td {
+  min-width: 90px;
+}
+
+.tools-table-card select {
+  min-height: 34px;
+  padding: 6px 8px;
+  font-size: 11px;
+}
+
+.tools-table-card .tools-row-actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.tools-table-card .tools-row-actions .btn {
+  min-height: 30px;
+  padding: 5px 9px;
+  font-size: 10px;
+}
+
+.tools-badge-ok {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.tools-badge-warn {
+  color: var(--orange);
+  font-weight: 600;
+}
+
+.tools-badge-off {
+  color: var(--red);
+  font-weight: 600;
+}
+
+@media (max-width: 1240px) {
+  .tools-weather-current {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .tools-weather-days {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1000px) {
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+  .tools-weather-days {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .tools-ndvi-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .tools-view {
+    padding: 20px 16px 40px;
+  }
+  .tools-weather-current {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .tools-weather-days {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .tools-form-row {
+    grid-template-columns: 1fr;
+  }
+  .tools-form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .tools-card-head {
+    flex-direction: column;
+  }
+  .tools-search {
+    width: 100%;
+    min-width: 0;
+  }
+  .tools-gdd-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------------- plant library ---------------- */
+
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.library-card {
+  text-align: left;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  transition: border-color 0.15s, transform 0.15s;
+}
+
+.library-card:hover {
+  border-color: var(--green);
+  transform: translateY(-1px);
+}
+
+.library-swatch {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+
+.library-card strong {
+  font-size: 15px;
+  font-weight: 550;
+}
+
+.library-card small {
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.library-count {
+  color: var(--muted);
+  font-size: 10px;
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.library-detail {
+  margin-top: 8px;
+}
+
+.library-detail-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.library-detail-head h2 {
+  margin: 4px 0 0;
+}
+
+.library-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.library-facts > div {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px;
+  background: var(--bg);
+}
+
+.library-facts small {
+  display: block;
+  color: var(--muted);
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.library-facts p {
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.library-detail h3 {
+  margin: 22px 0 10px;
+  font-size: 14px;
+}
+
+.library-problems {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.library-problem {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg);
+}
+
+.library-problem summary {
+  cursor: pointer;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.library-problem summary small {
+  color: var(--muted);
+  font-size: 10px;
+  font-style: italic;
+}
+
+.library-problem > div {
+  padding: 0 14px 14px;
+}
+
+.library-problem p {
+  font-size: 12px;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.library-problem b {
+  color: var(--green);
+}
+
+.library-tips {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.library-tips li {
+  font-size: 12px;
+  line-height: 1.8;
+  margin-bottom: 6px;
+}
+
+/* ---------------- sensors ---------------- */
+
+.sensor-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.sensor-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px;
+  background: var(--bg);
+}
+
+.sensor-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+}
+
+.sensor-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--green);
+}
+
+.sensor-dry .sensor-dot {
+  background: var(--red);
+}
+
+.sensor-low .sensor-dot {
+  background: var(--orange);
+}
+
+.sensor-unknown .sensor-dot {
+  background: var(--muted);
+}
+
+.sensor-name {
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.sensor-moisture {
+  font-size: 30px;
+  font-weight: 550;
+  letter-spacing: -1px;
+  margin: 10px 0 4px;
+}
+
+.sensor-moisture em {
+  font-size: 10px;
+  color: var(--muted);
+  font-style: normal;
+  margin-left: 4px;
+}
+
+.sensor-meta {
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.sensor-time {
+  font-size: 9px;
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+.tools-view code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.92em;
+  background: var(--soft);
+  border-radius: 4px;
+  padding: 1px 4px;
+}
+
+.tools-page #sidebar nav {
+  overflow-y: auto;
+  min-height: 0;
+}
+
+@media (max-width: 760px) {
+  .library-facts {
+    grid-template-columns: 1fr;
+  }
+  .library-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Tables become stacked cards: no horizontal scrolling on a phone. */
+  .tools-view .table-wrap {
+    overflow: visible;
+    border: 0;
+    border-radius: 0;
+    background: none;
+  }
+  .tools-view .table-wrap table,
+  .tools-view .table-wrap thead,
+  .tools-view .table-wrap tbody,
+  .tools-view .table-wrap tr,
+  .tools-view .table-wrap td {
+    display: block;
+    width: 100%;
+  }
+  .tools-view .table-wrap thead {
+    display: none;
+  }
+  .tools-view .table-wrap tr {
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--surface);
+    margin-bottom: 10px;
+    padding: 4px 0;
+  }
+  .tools-view .table-wrap tr:last-child {
+    margin-bottom: 0;
+  }
+  .tools-view .table-wrap td {
+    min-width: 0;
+    border: 0;
+    padding: 7px 14px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    text-align: right;
+  }
+  .tools-view .table-wrap td::before {
+    content: attr(data-label);
+    flex: 0 0 auto;
+    font-size: 9px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: left;
+  }
+  .tools-view .table-wrap td:first-child {
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    text-align: left;
+    font-size: 14px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 4px;
+  }
+  .tools-view .table-wrap td:first-child::before {
+    display: none;
+  }
+  .tools-view .table-wrap td:last-child {
+    padding-bottom: 12px;
+  }
+  .tools-view .table-wrap td select {
+    width: auto;
+    max-width: 62%;
+  }
+  .tools-view .table-wrap td .tools-row-actions {
+    justify-content: flex-end;
+  }
+  .tools-view .table-wrap td[colspan] {
+    display: block;
+    text-align: left;
+  }
+  .tools-view .table-wrap td[colspan]::before {
+    display: none;
+  }
+
+  /* Sensor history: the capsule is the card title, time is a detail row. */
+  #sensor-rows tr {
+    display: flex;
+    flex-direction: column;
+  }
+  #sensor-rows td:nth-child(2) {
+    order: -1;
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    text-align: left;
+    font-size: 14px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 4px;
+  }
+  #sensor-rows td:nth-child(2)::before {
+    display: none;
+  }
+  #sensor-rows td:first-child {
+    display: flex;
+    padding: 7px 14px;
+    font-size: 12px;
+    border-bottom: 0;
+    margin-bottom: 0;
+    text-align: right;
+  }
+  #sensor-rows td:first-child::before {
+    display: inline;
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "capsules": [
+    {
+      "id": "101",
+      "name": "TerraDrop 101",
+      "field": "",
+      "note": "ESP32-C3 soil moisture capsule. Pre-linked in this build."
+    }
+  ]
+}

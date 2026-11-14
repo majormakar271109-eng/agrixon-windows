@@ -1,0 +1,23 @@
+✔ HTTP POWER retains complete normalized daily DTO (35.177383ms)
+✔ HTTP POWER invalid latitude rejected before NASA (3.802042ms)
+✔ HTTP POWER empty latitude is not silently converted to zero (2.996803ms)
+✔ HTTP POWER invalid calendar date rejected (2.251652ms)
+✔ HTTP POWER missing values stay null and status partial (9.515191ms)
+✔ HTTP FIRMS missing key returns 424, not zero fires (2.205279ms)
+✔ HTTP FIRMS secret absent from returned response (4.570796ms)
+✔ HTTP EONET transforms bbox order to west,north,east,south (4.20993ms)
+✔ HTTP empty bbox coordinate rejected (2.371277ms)
+✔ HTTP CMR yields concept URL and requested metadata (8.153947ms)
+✔ HTTP upstream outage is 503 with null, not invented measurements (825.898917ms)
+✔ NASA client retries transient failure exactly twice (886.395139ms)
+✔ NASA client does not retry HTTP 400 (0.751411ms)
+✔ NASA client returns last success with stale flag during outage (900.179642ms)
+✔ NASA client rejects arbitrary upstream host (0.260874ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2706.64247

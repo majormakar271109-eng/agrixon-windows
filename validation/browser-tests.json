@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "tests": [
+    "GeoJSON import / crop assignment / persistence / CSV BOM",
+    "Budget preview / apply / undo"
+  ],
+  "realApp": true,
+  "externalNetworkBlocked": true,
+  "liveMapVerified": false,
+  "results": [
+    {
+      "route": "/",
+      "desktopOverflow": false
+    },
+    {
+      "route": "/table",
+      "desktopOverflow": false
+    },
+    {
+      "route": "/plan",
+      "desktopOverflow": false
+    },
+    {
+      "route": "/risks",
+      "desktopOverflow": false
+    },
+    {
+      "route": "/sources",
+      "desktopOverflow": false
+    },
+    {
+      "route": "/settings",
+      "desktopOverflow": false
+    }
+  ],
+  "browserErrors": []
+}

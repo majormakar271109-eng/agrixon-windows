@@ -1,0 +1,23 @@
+✔ Live workspace starts empty, never demo (1.270555ms)
+✔ GIBS metadata parses namespaced layer/date/matrix (1.34062ms)
+✔ GIBS rejects DTD / entities (0.298738ms)
+✔ GIBS rejects invalid HTML instead of reporting empty success (0.16952ms)
+✔ Map proxy rewrites glyph, sprite, TileJSON and raster template URLs (0.347726ms)
+✔ Map proxy has no arbitrary host or traversal input (0.215355ms)
+✔ GeoJSON import computes actual geometry area (1.954305ms)
+✔ GeoJSON import rejects malformed JSON and nonpolygon data (0.85114ms)
+✔ HTTP health and all six views serve without Next runtime (11.517969ms)
+✔ HTTP missing FIRMS key is explicit and does not fabricate fires (1.398236ms)
+✔ HTTP rejects invalid NASA query and arbitrary API paths (2.686198ms)
+✔ HTTP blocks writes and map proxy arbitrary paths (0.463604ms)
+✔ DNS errors retain a safe actionable code without URL/key (0.213927ms)
+✔ POWER provider metadata comes from actual response header, including recent source names (0.365547ms)
+✔ POWER missing header never invents a provider name (0.163887ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 31.040777

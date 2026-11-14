@@ -1,0 +1,11 @@
+Real local-server NASA checks. No fixtures. Start the application first.
+firms KEY REQUIRED 424 KEY_REQUIRED
+power FAIL 503 DNS_FAILURE
+eonet FAIL 503 DNS_FAILURE
+cmr FAIL 503 DNS_FAILURE
+basemap FAIL 503 DNS_FAILURE
+worldview FAIL 503 DNS_FAILURE
+gibs-capabilities FAIL 503 DNS_FAILURE
+gibs-ndvi FAIL 503 DNS_FAILURE
+gibs-truecolor FAIL 503 DNS_FAILURE
+Saved nasa-diagnostics.json. Live NASA without FIRMS: NOT PASSED

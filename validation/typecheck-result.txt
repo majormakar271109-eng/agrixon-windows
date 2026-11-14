@@ -1,0 +1,1 @@
+PASS: strict TypeScript check of standalone client/server. No diagnostics.

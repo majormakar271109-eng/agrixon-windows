@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": [
+    "Route entrance animation",
+    "Modal opening/closing",
+    "Stable navigation links",
+    "Reduced-motion route disables animation",
+    "Reduced-motion modal disables animation",
+    "Escape closes modal"
+  ],
+  "browserExceptions": []
+}

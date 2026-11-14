@@ -1,0 +1,196 @@
+{
+  "checkedAt": "2026-11-11T13:20:28.537Z",
+  "application": "AppName Live",
+  "version": "0.2.2",
+  "liveTransport": true,
+  "fixtures": false,
+  "passedWithoutFirms": false,
+  "firms": {
+    "id": "firms",
+    "httpStatus": 424,
+    "ok": false,
+    "keyRequired": true,
+    "status": "unavailable",
+    "error": {
+      "code": "KEY_REQUIRED",
+      "message": "Добавьте FIRMS_MAP_KEY на сервере."
+    },
+    "records": null,
+    "dataset": "VIIRS_SNPP_NRT",
+    "observedAt": null,
+    "cache": {
+      "fetchedAt": null,
+      "expiresAt": null,
+      "staleAgeHours": null
+    }
+  },
+  "results": [
+    {
+      "id": "power",
+      "httpStatus": 503,
+      "ok": false,
+      "keyRequired": false,
+      "status": "unavailable",
+      "error": {
+        "code": "DNS_FAILURE",
+        "message": "Сервер не может разрешить адрес источника (DNS). Проверьте интернет и DNS на компьютере с приложением. Это не означает, что NASA не работает."
+      },
+      "records": null,
+      "dataset": "POWER Daily API · T2M_MIN / T2M_MAX / PRECTOTCORR / GWETROOT / WS2M / ALLSKY_SFC_SW_DWN",
+      "observedAt": null,
+      "cache": {
+        "fetchedAt": null,
+        "expiresAt": null,
+        "staleAgeHours": null
+      }
+    },
+    {
+      "id": "gibs-capabilities",
+      "httpStatus": 503,
+      "ok": false,
+      "keyRequired": false,
+      "status": "unavailable",
+      "error": {
+        "code": "DNS_FAILURE",
+        "message": "Сервер не может разрешить адрес источника (DNS). Проверьте интернет и DNS на компьютере с приложением. Это не означает, что NASA не работает."
+      },
+      "records": null,
+      "dataset": "MOD13Q4N 6.1NRT · C2007658439-LANCEMODIS; MODIS_Terra_NDVI_8Day; MODIS_Terra_CorrectedReflectance_TrueColor; VIIRS_SNPP_CorrectedReflectance_TrueColor",
+      "observedAt": null,
+      "cache": {
+        "fetchedAt": null,
+        "expiresAt": null,
+        "staleAgeHours": null
+      }
+    },
+    {
+      "id": "gibs-ndvi",
+      "httpStatus": 503,
+      "ok": false,
+      "keyRequired": false,
+      "status": "unavailable",
+      "error": {
+        "code": "DNS_FAILURE",
+        "message": "Сервер не может разрешить адрес источника (DNS). Проверьте интернет и DNS на компьютере с приложением. Это не означает, что NASA не работает."
+      },
+      "records": null,
+      "dataset": "MOD13Q4N 6.1NRT · C2007658439-LANCEMODIS; MODIS_Terra_NDVI_8Day; MODIS_Terra_CorrectedReflectance_TrueColor; VIIRS_SNPP_CorrectedReflectance_TrueColor",
+      "observedAt": null,
+      "cache": {
+        "fetchedAt": null,
+        "expiresAt": null,
+        "staleAgeHours": null
+      }
+    },
+    {
+      "id": "gibs-truecolor",
+      "httpStatus": 503,
+      "ok": false,
+      "keyRequired": false,
+      "status": "unavailable",
+      "error": {
+        "code": "DNS_FAILURE",
+        "message": "Сервер не может разрешить адрес источника (DNS). Проверьте интернет и DNS на компьютере с приложением. Это не означает, что NASA не работает."
+      },
+      "records": null,
+      "dataset": "MOD13Q4N 6.1NRT · C2007658439-LANCEMODIS; MODIS_Terra_NDVI_8Day; MODIS_Terra_CorrectedReflectance_TrueColor; VIIRS_SNPP_CorrectedReflectance_TrueColor",
+      "observedAt": null,
+      "cache": {
+        "fetchedAt": null,
+        "expiresAt": null,
+        "staleAgeHours": null
+      }
+    },
+    {
+      "id": "worldview",
+      "httpStatus": 503,
+      "ok": false,
+      "keyRequired": false,
+      "status": "unavailable",
+      "error": {
+        "code": "DNS_FAILURE",
+        "message": "Сервер не может разрешить адрес источника (DNS). Проверьте интернет и DNS на компьютере с приложением. Это не означает, что NASA не работает."
+      },
+      "records": null,
+      "dataset": "WVS Snapshot API v1; исходный layer ID сохраняется",
+      "observedAt": null,
+      "cache": {
+        "fetchedAt": null,
+        "expiresAt": null,
+        "staleAgeHours": null
+      }
+    },
+    {
+      "id": "eonet",
+      "httpStatus": 503,
+      "ok": false,
+      "keyRequired": false,
+      "status": "unavailable",
+      "error": {
+        "code": "DNS_FAILURE",
+        "message": "Сервер не может разрешить адрес источника (DNS). Проверьте интернет и DNS на компьютере с приложением. Это не означает, что NASA не работает."
+      },
+      "records": null,
+      "dataset": "EONET v3 events",
+      "observedAt": null,
+      "cache": {
+        "fetchedAt": null,
+        "expiresAt": null,
+        "staleAgeHours": null
+      }
+    },
+    {
+      "id": "cmr",
+      "httpStatus": 503,
+      "ok": false,
+      "keyRequired": false,
+      "status": "unavailable",
+      "error": {
+        "code": "DNS_FAILURE",
+        "message": "Сервер не может разрешить адрес источника (DNS). Проверьте интернет и DNS на компьютере с приложением. Это не означает, что NASA не работает."
+      },
+      "records": null,
+      "dataset": "CMR collections.json; concept IDs из результатов",
+      "observedAt": null,
+      "cache": {
+        "fetchedAt": null,
+        "expiresAt": null,
+        "staleAgeHours": null
+      }
+    },
+    {
+      "id": "firms",
+      "httpStatus": 424,
+      "ok": false,
+      "keyRequired": true,
+      "status": "unavailable",
+      "error": {
+        "code": "KEY_REQUIRED",
+        "message": "Добавьте FIRMS_MAP_KEY на сервере."
+      },
+      "records": null,
+      "dataset": "VIIRS_SNPP_NRT",
+      "observedAt": null,
+      "cache": {
+        "fetchedAt": null,
+        "expiresAt": null,
+        "staleAgeHours": null
+      }
+    },
+    {
+      "id": "basemap",
+      "httpStatus": 503,
+      "ok": false,
+      "keyRequired": false,
+      "status": null,
+      "error": {
+        "code": "DNS_FAILURE",
+        "message": "Сервер не может разрешить адрес источника (DNS). Проверьте интернет и DNS на компьютере с приложением. Это не означает, что NASA не работает."
+      },
+      "records": null,
+      "dataset": null,
+      "observedAt": null,
+      "cache": null
+    }
+  ]
+}
